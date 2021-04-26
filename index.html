@@ -1,7 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;700&family=Roboto+Mono:wght@100;400&family=Orelega+One&family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<template class="showComand">
+   
+    <div class="showComandContent">
+        <div class="t1">
+            <h2 class="jsclas"></h2>
+            
+            <h2 class="jQclas"></h2>
+        </div>
+        <div class="vanillaBox">
+            <h3>Vanilla command</h3>
+            <code class="vanillaText"></code>
+        </div> 
+        <div class="jQueryBox">
+            <h3>jQuery command</h3>
+            <code class="jQueryText"></code>
+        </div> 
+        <button class="ejempleButJq">Show jQuery sintax</button>  
+        <button class="run">Show vanilla sintax</button>  
+        
+        <button class="ejempleButVani">Show vanilla sintax</button>
+        <p class="result"></p>
+        
+        
+    </div>
+    <div class="backgound"></div>
+    <div class="jquerycode"></div>
+    <div class="vanillacode"></div>
+    
+</template>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+       <h2  class="welcome">Welcome to the </h2>
+       <h1 id='tiitle'  class="JikiQuery"> JikiQuery</h1>
+       
+    </header>
+    <main>
+       
+        <section class="reference">
+            <div class="eventBox">
+                <h2  class="eventTitle">Events</h2>
+                <ul class="events">
+                    <li  class="specificEvent">When the HTML document has been loaded and you can manipulate it with JavaScript
+                    </li>
+                    <li class="specificEvent">When an HTML item has been clicked</li>
+                    <li class="specificEvent">When an HTML item has been double clicked</li>
+                    <li class="specificEvent">Press a key on the keyboard</li>
+                    <li class="specificEvent">When the user moves the mouse cursor</li>
+                    <li class="specificEvent">Text input, value</li>
+                    <li class="specificEvent">When an image is loaded</li>
+                    <li class="specificEvent">When an image fails to load</li>
+                    <li class="specificEvent">When a form is submitted</li>
+                    <li class="specificEvent">Select: Option change</li>
+                    <li class="specificEvent">When you position the mouse over an element </li>
+                    <li class="specificEvent">Checkbox: checked or unchecked</li>
+                    <li class="specificEvent">When a ul list item is clicked, show the item that was clicked</li>
+                    
+                </ul>
+            </div>
+            <div class="selectorsBox">
+                <h2 class="selectorTitle">Selectors</h2>
+                <ul class="selectors">
+                    <li class="specificSelector">Create an HTML element with any text value </li>
+                    <li class="specificSelector">Remove an HTML element with any text value </li>
+                    <li class="specificSelector">Append an HTML element with any text value to a parent element </li>
+                    <li class="specificSelector">Prepend an HTML element with any text value to a parent element</li>
+                    <li class="specificSelector">Create and add an HTML after another element</li>
+                    <li class="specificSelector">Create and add an HTML before another element</li>
+                    <li class="specificSelector">Clone an HTML element within other element</li>
+                    <li class="specificSelector">Add a class</li>
+                    <li class="specificSelector">Remove a class</li>
+                    <li class="specificSelector">Toggle a class</li>
+                    <li class="specificSelector">Add and remove a disabled attribute </li>
+                    <li class="specificSelector">Set and Remove a data-src attribute</li>
+                    <li class="specificSelector">Hide (display: none) and Show (display: block)</li>
+                    <li class="specificSelector">Fade in an HTML element using jQuery</li>
+                    <li class="specificSelector">Iterate a collection of elements </li>
+                    <li class="specificSelector">Get the parent element</li>
+                    <li class="specificSelector">Get the collection of children</li>
+                    <li class="specificSelector">Get all the elements that have a certain class and change their font weight </li>
+                    <li class="specificSelector">Get an item by id and change its font weight</li>
+                    <li class="specificSelector">Get all the elements that have a certain class and the display property of none and change their font color</li>
+                    <li class="specificSelector">Get the options of a select element that are selected (attribute selected)</li>
+                    <li class="specificSelector">Change the href attribute of the first &lta> element  </li>
+                    <li class="specificSelector">Show an alert with the value of the first &ltinput> of the page</li>
+                    <li class="specificSelector">Remove all items from a specific selector</li>
+                    <li class="specificSelector">Animate an item after 2 seconds from the initial page load</li>
+                    
+                </ul>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="assets/scriptsJquery.js"></script>
+    <!--<script src="assets/scriptsNative.js"></script>-->
+    <script src="assets/scriptsGeneral.js"></script>
 </body>
+
 </html>

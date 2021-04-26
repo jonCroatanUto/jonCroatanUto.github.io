@@ -1,0 +1,301 @@
+body{
+    margin: 0px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h2.welcome{
+    justify-self: right;
+    padding-right:20px ;
+    font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+}
+h1.JikiQuery{
+    justify-self: left;
+    color: white;
+    background-color: black;
+    font-family: 'Orelega One';
+    font-size: 120px;
+    margin:0%;
+    width: 100%;
+    padding: 2%;
+    justify-content: center;
+
+}
+section.reference{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+ul{
+    list-style: none;
+}
+
+h2{
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    font-family: 'Antonio', sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Antonio', sans-serif;
+    
+}
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 80%;
+}
+.eventBox{
+    background-color: black;
+}
+.selectorsBox{
+    background-color: white;
+}
+
+h2.eventTitle{
+    
+    border-right: 5px solid white;
+    max-width: 80%;
+    color: white;
+    min-height: 100px;
+    font-size: 30px;
+    
+}
+li.specificEvent{
+    max-width: 80%;
+    min-height: 50px;
+    border-left: 2px solid white;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+h2.selectorTitle{
+    
+    color: black;
+    border-right: 5px solid black;
+    max-width: 80%;
+    min-height: 100px;
+    font-size: 30px;
+}
+li.specificSelector{
+    max-width: 80%;
+    min-height: 50px;
+    color: black;
+    margin-bottom: 10px;
+    border-left: 2px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+/*_________________template*/
+.backgound{
+    position: fixed;
+    z-index: 0.5;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left:0%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.showComandContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    position: fixed;
+    top: 0%;
+    color:white;
+    width: 70%;
+    height: 70%;
+    top:15%;
+    left: 15%;
+    z-index: 1;
+    border-radius: 50px;
+    background-color: black;
+    border: none;
+    
+}
+div.t1{
+    justify-content: center;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+
+}
+h2.jsclas{
+    padding: 10px;
+}
+h2.jQclas{
+    color: black;
+    background-color: white;
+    padding: 30px 10px;
+    margin-left: 0%;
+    height: 121%;
+    min-width:20%;
+    border-bottom-left-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+div.vanillaBox{
+    grid-column: 1/2;
+    padding: 10px;
+    border: none;
+    
+}
+div.jQueryBox{
+    grid-column: 3/4;
+    max-height: 60px;
+    text-align: right;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 20px;
+}
+code.jQueryText{
+    
+    font-size: 16px;
+}
+p.result{
+  font-size: 30px;
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+ font-family: 'Roboto Mono', monospace;
+ font-weight: 100;
+
+}
+.ejempleButJq{
+    max-width: 50%;
+    justify-self: center;
+    align-self: center;
+    color: black;
+    border: white 1px solid;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+
+}
+div.vanillacode{
+   position: fixed;
+   padding-left: 20%;
+   left:0%;
+   top:7%;
+   z-index:2;
+   color: white;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 16px;
+   background-color: rgba(0, 0, 0,0.8);
+   width: 100%;
+}
+div.jquerycode{
+    position: fixed;
+    padding-left: 20%;
+    left:0%;
+    top:90%;
+    z-index:2;
+    font-size: 16px;
+    color: white;
+   font-family: 'Roboto Mono', monospace;
+   background-color:  rgba(0, 0, 0,0.8);
+   width: 100%;
+ }
+.ejempleButVani{
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    border: white 1px solid;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    background: none; 
+    padding: 10px;
+    cursor: pointer;
+}
+button.run{
+    width: 50%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    border: white 1px solid;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    outline: none;
+    background: none; 
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+code.vanillaText{
+    grid-column: 1/3;
+    font-size: 12px;
+    
+}
+.inpText{
+    color:white;
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    border-bottom: rgba(255, 255, 255, 0.438) 0.1px solid;
+    width: 80%;
+    height: 80%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    cursor: pointer;
+}
+.sendText{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.imag{
+    width: 100px;
+    height: 100px;
+}
+.circle{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+}
+p.text{
+position: fixed;
+font-size: 20px;
+color: blue;
+margin: 0px;
+padding: 0px;
+max-width: 10px;
+font-family:  'Antonio', sans-serif;
+font-size: 50px;
+font-weight: 100;
+pointer-events: none;
+}
+.result.newClass{
+    font-size: 15px;
+}
+/*__________________*/
+
