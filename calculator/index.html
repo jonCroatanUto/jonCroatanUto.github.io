@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    
+    <title>Calculadora eval</title>
+</head>
+
+<body class="dark-mode">
+
+    <div class='abrir' style="display: none;">
+        <label class='abrir'>
+            <input onclick="abrir()" type="checkbox">
+            <span class='abrirRound'> </span>
+        </label>
+    </div>
+    
+    <main class="main-dark">
+        
+        <section class='head head-dark'>
+
+            
+            <div class='boto2'>
+
+                <label class='close'>
+                    <input onclick = "cerrar()" type="checkbox">
+                    <span class='closeRound'> </span>
+                </label>
+
+                <label class='mini'>
+                    <input onclick = "mini()"  type="checkbox">
+                    <span class='minRound'> </span>
+                </label>
+
+                <label class='full'>
+                    <input onclick = "fullsc()" type="checkbox">
+                    <span class='fullRound'> </span>
+                </label>
+
+                <label class='histor'>
+                    <input onclick="his()" type="checkbox">
+                    <span class='historRound'> </span>
+                </label>
+
+            </div>
+
+
+
+            <div class="boto">
+                <label class='slide'>
+                    <input id="dark-mode-toggle" type="checkbox">
+                    <span class='sliderRound'> </span>
+                </label>
+            </div>
+            
+            <div id='scr'class='screen screen-dark screen-light'> 
+                <p class="his" style="display: none;" ></p>
+                <p class="consol1" style="visibility: visible;"></p>
+                <p class="input_err" style="visibility:hidden">no pongas más de un operador</p>
+            </div>
+                 
+        </section>
+
+
+        <section class='keys'>
+            <ul class="li-oper">
+               
+                <button id ="dele" class="text-format-dark-op"><li class="oper text-format-light">C</li></button>
+                <button id ="inverse" class="text-format-dark-op"><li class="oper text-format-light">±</li></button>
+                <button id ="per" class="text-format-dark-op"><li class="oper text-format-light">%</li></button>
+                <button id ="div" class="text-format-dark-op"><li class="oper text-format-light">/</li></button>
+
+            </ul>
+            
+            <ul class="li-numbers">
+                
+                <button id ="7" class="text-format-dark-num"><li class="number text-format-light">7</li></button>
+                <button id ="8" class="text-format-dark-num"><li class="number text-format-light">8</li></button>
+                <button id ="9" class="text-format-dark-num"><li class="number text-format-light">9</li></button>
+                <button id ="4" class="text-format-dark-num"><li class="number text-format-light">4</li></button>
+                <button id ="5" class="text-format-dark-num"><li class="number text-format-light">5</li></button>
+                <button id ="6" class="text-format-dark-num"><li class="number text-format-light">6</li></button>
+                <button id ="1" class="text-format-dark-num"><li class="number text-format-light">1</li></button>
+                <button id ="2" class="text-format-dark-num"><li class="number text-format-light">2</li></button>
+                <button id ="3" class="text-format-dark-num"><li class="number text-format-light">3</li></button>
+                <button id ="0" class="text-format-dark-num"><li class="number text-format-light">0</li></button>
+                <button id ="float" class="text-format-dark-num"><li class="number text-format-light">.</li></button>
+           
+            </ul>
+
+            <ul class="li-oper2">
+
+                <button id ="sum" class="text-format-dark-op"><li class="oper text-format-light">+</li></button>
+                <button id ="mult" class="text-format-dark-op"><li class="oper text-format-light">*</li></button>
+                <button id ="rest" class="text-format-dark-op"><li class="oper text-format-light">-</li></button>
+                <button id ="equal" class ="result-button-dark result-button-light"><li class="oper  text-format-light">=</li></button>
+                
+            </ul>
+            
+            
+        </section>
+        
+    </main>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
