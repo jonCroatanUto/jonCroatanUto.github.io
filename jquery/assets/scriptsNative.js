@@ -292,7 +292,7 @@ function sonNode(){
 function clssN(){
     document.querySelector(".run").textContent="Get al the elements with the class: specificEvent";
     document.querySelector('.run').addEventListener('click',function() {
-        document.querySelector('.specificEvent').style.color='yellow';
+        document.querySelectorAll('.specificEvent').style.color='yellow';
        
         document.querySelector('.run').textContent='Good job!!';
         document.querySelector('.result').textContent='Now check the Events descriptions';
