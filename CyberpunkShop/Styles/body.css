@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, .html{
+	height: 100%;
+	max-height: 100vh;
+}
+
+.body{
+	background-color: rgb(0, 0, 0);
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+	min-width: 600px;
+	overflow: hidden;
+}
+
+.aside-div{
+	order: 1;
+}
+
+.grid-body{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	height: 100%;
+	min-width: 500px;
+	order: 2;
+}
+
+.main{
+	background-color: rgb(0, 0, 0);
+	display: grid;
+	grid-template-columns:.3fr 4fr;
+	max-height: 100vh;
+}
+
+.main section p{
+	margin: 0 auto;
+	text-align: right;
+}
+
+.gradient-pink{
+	position: absolute;
+	background: var(--gradient-pink);
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	transform: translateX(50px);
+};
+
+/** -------------------------------
+-------RESPONSIVE MOVIL -----------
+-------------------------------- **/
+@media only screen and (max-width:800px) {
+
+	.body{
+		background-color: rgb(0, 0, 0);
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 7fr 1fr;
+		min-height: unset;
+		min-width: unset;
+	}
+
+	.aside-div{
+		order: 2;
+	}
+
+	.grid-body{
+		background-color: rgb(0, 0, 0);
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+		min-height: 500px;
+		max-width: 100vw;
+		order: 1;
+		min-width: unset;
+	}
+
+}
