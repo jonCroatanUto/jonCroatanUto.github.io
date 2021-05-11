@@ -1,3 +1,10 @@
 body{
     background-color: green;
 }
+@mixin grid3($cell1,$cell2,$cell3,$gap) {
+    display: grid;
+    grid-template-columns: $cell1 $cell2 $cell3;
+    column-gap: $gap;
+    justify-content: left;
+    align-content: flex-start;
+  }
