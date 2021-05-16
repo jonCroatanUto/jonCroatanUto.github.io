@@ -1,0 +1,21 @@
+@use './global' as global;
+
+.developerHide{
+transition: 1s;
+   height: 2%;
+   border-left: rgb(6, 21, 158);
+}
+.developerShow{
+    transition: 1s;
+    height: 100%;
+    border-left: rgb(6, 21, 158);
+    
+ }
+ .developerShow li{
+    @include global.list (none,none,20px);
+    margin-left: 100px;
+ }
+ .developerShow li a{
+    @include global.aHref (white,global.$fontH1);
+    font-size:20px;
+ }

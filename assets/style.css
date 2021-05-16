@@ -1,8 +1,43 @@
+/*_________________*/
+@font-face {
+  font-family: "Comfortaa";
+  src: url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
 body {
-  background-color: green;
+  background-image: linear-gradient(-10deg, black, #06159e);
+  height: 1000px;
 }
 
-.videoGrid {
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-stretch: ultra-condensed;
+  color: #06159e;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px black;
+  transition: 2s;
+}
+
+h2 {
+  transition: 1s;
+  font-family: "Comfortaa";
+  font-weight: 700;
+  color: #06159e;
+  border-bottom: #06159e 0.5px solid;
+  cursor: pointer;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px #0d0e07;
+  width: 500px;
+  text-align: right;
+}
+
+h2:hover {
+  text-shadow: 3px 3px 3px #dfec96;
+}
+
+.videoGridShow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
@@ -13,6 +48,36 @@ body {
 .frame {
   width: 100%;
   height: 100%;
+}
+
+.developerHide {
+  transition: 1s;
+  height: 2%;
+  border-left: #06159e;
+}
+
+.developerShow {
+  transition: 1s;
+  height: 100%;
+  border-left: #06159e;
+}
+
+.developerShow li {
+  list-style: none;
+  color: none;
+  font-family: none;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.developerShow li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

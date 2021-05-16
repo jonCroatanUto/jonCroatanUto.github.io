@@ -1,0 +1,111 @@
+$font: "Ubuntu", sans-serif;
+$fontH2: "Comfortaa";
+$fontH1: 'Raleway', sans-serif;
+$backgroundC: #fafafa;
+$boxColor: #ffffff;
+$textPostColor: #262626;
+$postColor: #404040;
+$flexbox:flex;
+$borderColor:1px solid #dbdbdb;
+$anchor:100%;
+/*_________________*/
+@font-face {
+  font-family: $fontH2;
+  src: url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+  font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+@mixin grid3($cell1,$cell2,$cell3,$gap) {
+  display: grid;
+  grid-template-columns: $cell1 $cell2 $cell3;
+  column-gap: $gap;
+  justify-content: left;
+  align-content: flex-start;
+}
+@mixin resetMarginPadding {
+    margin: 0;
+    padding: 0;
+  }
+@mixin inputs($color,$top,$bot){
+    border-radius: 3px;
+    border: $borderColor;
+    height: 40px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: $color;
+    margin-top: $top;
+    margin-bottom: $bot;
+    
+  }
+@mixin image ($ejeZ){
+    position: absolute;
+    z-index: $ejeZ;
+    width: 50%; 
+  }
+@mixin backimag ($ejeX,$ejeY,$bordeR,$url){
+  height: $ejeX;
+  width: $ejeY;
+  border-radius: $bordeR;
+  margin: 5px;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+@mixin flex ($direction,$xPos,$ypos,$color,$borde,$anchor){
+    display: $flexbox;
+    flex-direction: $direction;  
+    justify-content: $xPos;
+    align-items: $ypos;
+    width: $anchor;
+    background-color: $color;
+    border: #dbdbdb $borde solid;
+  
+  }
+@mixin aHref ($color,$fonts){
+  text-decoration: none;
+  color: $color;
+  font-weight: 400;
+  font-family: $fonts;
+  justify-self: center;
+    align-self: center;
+  
+}
+@mixin list ($color,$fonts,$dist){
+  list-style: none;
+  color: $color;
+  font-family: $fonts;
+  margin-bottom: $dist;
+  
+  
+}
+
+body {
+  background-image: linear-gradient(-10deg, rgb(0,0,0), rgb(6, 21, 158));
+  height: 1000px;
+}
+h1{
+  font-family: $fontH1;
+  font-weight: 900;
+  font-stretch: ultra-condensed;
+  color: rgb(6, 21, 158);
+  font-size: 100px;
+  text-shadow: 3px 3px 3px rgb(0,0,0);
+  transition: 2s;
+}
+h2{
+  transition: 1s;
+  font-family: $fontH2;
+  font-weight: 700;
+  color: rgb(6, 21, 158);
+  border-bottom: rgb(6, 21, 158) 0.5px solid;
+  cursor: pointer;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px rgb(13, 14, 7);
+  width:500px;
+  text-align: right;
+ 
+}
+h2:hover{
+  text-shadow: 3px 3px 3px rgb(223, 236, 150);
+}

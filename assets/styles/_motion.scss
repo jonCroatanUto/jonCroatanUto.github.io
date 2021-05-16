@@ -1,6 +1,6 @@
-@use './general' as global;
+@use './global' as global;
 
-.videoGrid{
+.videoGridShow{
     @include global.grid3(1fr,1fr,1fr,5px)
 }
 .frame{
