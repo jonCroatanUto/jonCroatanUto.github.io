@@ -15,10 +15,12 @@ $anchor:100%;
   font-weight: 100 1000;
 	font-stretch: 25% 151%;
 }
-@mixin grid3($cell1,$cell2,$cell3,$gap) {
+@mixin grid3($cell1,$cell2,$cell3,$row1,$row2,$row3,$gapColumn,$gapRow) {
   display: grid;
   grid-template-columns: $cell1 $cell2 $cell3;
-  column-gap: $gap;
+  grid-template-rows: $row1 $row2 $row3;
+  column-gap: $gapColumn;
+  row-gap: $gapRow;
   justify-content: left;
   align-content: flex-start;
 }
@@ -81,8 +83,9 @@ $anchor:100%;
 }
 
 body {
-  background-image: linear-gradient(-10deg, rgb(0,0,0), rgb(6, 21, 158));
-  height: 1000px;
+  background-image: linear-gradient(-180deg, rgb(0,0,0), rgb(6, 21, 158));
+  min-height: 1000px;
+  height: 100%;
 }
 h1{
   font-family: $fontH1;

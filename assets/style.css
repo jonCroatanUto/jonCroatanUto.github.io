@@ -6,8 +6,9 @@
   font-stretch: 25% 151%;
 }
 body {
-  background-image: linear-gradient(-10deg, black, #06159e);
-  height: 1000px;
+  background-image: linear-gradient(-180deg, black, #06159e);
+  min-height: 1000px;
+  height: 100%;
 }
 
 h1 {
@@ -39,15 +40,111 @@ h2:hover {
 
 .videoGridShow {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: none none none;
+  grid-template-rows: 1fr 1fr 1fr;
   column-gap: 5px;
+  row-gap: 5px;
   justify-content: left;
   align-content: flex-start;
+  grid-template-columns: 4fr;
 }
 
-.frame {
+.reel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  background-color: none;
+  border: #dbdbdb none solid;
+}
+
+.free {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: none;
+  border: #dbdbdb none solid;
+}
+
+.art {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: none;
+  border: #dbdbdb none solid;
+}
+
+.videoGridShow h3 {
+  font-family: "Comfortaa";
+  color: #6672e0;
+  font-size: 25px;
+  /*text-shadow: 1px 1px 2px rgb(223, 236, 150);*/
+  transition: 2s;
+}
+
+#eixu {
   height: 100%;
+  width: 100%;
+  border-radius: none;
+  margin: 5px;
+  background-image: url("./img/Eixu.png");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#quabu {
+  height: 100%;
+  width: 100%;
+  border-radius: none;
+  margin: 5px;
+  background-image: url("./img/quabu.png");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#laser {
+  height: 100%;
+  width: 100%;
+  border-radius: none;
+  margin: 5px;
+  background-image: url("./img/lasers.png");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#draw {
+  height: 100%;
+  width: 100%;
+  border-radius: none;
+  margin: 5px;
+  background-image: url("./img/draw.png");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#draw2 {
+  height: 100%;
+  width: 100%;
+  border-radius: none;
+  margin: 5px;
+  background-image: url("./img/draw2.png");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .developerHide {
